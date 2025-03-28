@@ -1,1 +1,29 @@
 /* You can add global styles to this file, and also import other style files */
+
+@font-face {
+    font-family: 'NunitoSans';
+    src: url('/assets/font/NunitoSans.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+:root {
+
+
+    // colors
+    --c-acd: rgb(252, 225, 22);
+    --c-acd-darker: rgb(151, 134, 2);
+    --c-acd-dark: rgb(50, 45, 1);
+
+    --fs-lg: 
+}
+
+body {
+    font-family: 'NunitoSans';
+}
+
+a {
+   cursor: pointer;
+   text-decoration: none;
+   color: inherit; 
+}
