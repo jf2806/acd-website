@@ -1,0 +1,28 @@
+/* Layout des Headers */
+.fc-header-toolbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+  }
+  
+  .age-class-dropdown {
+    position: absolute;
+    top: 50px; /* Abstand vom Header */
+    right: 10px; /* Positionierung nach rechts */
+    z-index: 1000; /* Über den anderen Elementen anzeigen */
+    background-color: white;
+    border: 1px solid #ccc;
+    padding: 10px;
+    border-radius: 5px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+  }
+  
+  
+  /* Optionales Styling für das Select-Element */
+  select {
+    padding: 5px;
+    font-size: 14px;
+    width: 120px; /* Breite für das Dropdown */
+    height: 30px; /* Höhe für das Dropdown */
+  }

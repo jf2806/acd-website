@@ -1,0 +1,19 @@
+<div class="dialog">
+    <h2 mat-dialog-title>{{data.event._def.title}}</h2>
+    <div class="info">
+        <div class="info-container">
+            <mat-icon fontIcon="schedule"></mat-icon>
+            <div>{{ formatDate(data.event._instance.range.start) }}</div>
+        </div>
+        <div class="info-container">
+            <mat-icon fontIcon="last_page"></mat-icon>
+            <div>{{ formatDate(data.event._instance.range.end) }}</div>
+        </div>
+        <div class="info-container" *ngIf="data.event._def.extendedProps.links">
+            <mat-icon fontIcon="link"></mat-icon>
+            <div class="link-container">
+                <a *ngFor="let link of data.event._def.extendedProps.links" [href]="link.link" target="_blank">{{link.name}}</a>
+            </div>
+        </div>
+    </div>
+</div>

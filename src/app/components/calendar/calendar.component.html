@@ -1,0 +1,10 @@
+<div>
+    <full-calendar [options]="calendarOptions"></full-calendar>
+    <div class="age-class-dropdown" *ngIf="isAgeClassDropdownOpen">
+        <select (change)="onAgeClassChange($event)" [value]="selectedAgeClass">
+          <option *ngFor="let ageClass of ageClasses" [value]="ageClass">
+            {{ ageClass }}
+          </option>
+        </select>
+      </div>
+</div>
